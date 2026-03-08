@@ -27,6 +27,10 @@ Successfully connected two VPCs using AWS Transit Gateway with verified connecti
 - `Transit-Gateway-Lab-Summary.md` - Executive summary and quick reference
 - `TransientGateway.jpg` - Lab output screenshot showing successful connectivity test
 
+### Architecture Diagrams
+- `aws_transit_gateway_exact_diagram.pdf` - Detailed architecture diagram (PDF format)
+- `aws_transit_gateway_exact_diagram.txt` - Architecture diagram (text format)
+
 ### Cleanup Resources
 - `CLEANUP-GUIDE.md` - Manual step-by-step cleanup guide (20-30 minutes)
 - `CLEANUP-SCRIPTS-README.md` - Automated cleanup scripts documentation
