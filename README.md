@@ -21,10 +21,14 @@ Successfully connected two VPCs using AWS Transit Gateway with verified connecti
 
 ## 📁 Repository Contents
 
+### 🚀 Getting Started
+- `RUN-SCRIPTS-IN-AWS-CONSOLE.md` - **How to run scripts in AWS Console** (START HERE!)
+
 ### Documentation
-- `LAB-STEPS-VISUAL-GUIDE.md` - **Visual step-by-step lab guide** (START HERE!)
+- `LAB-STEPS-VISUAL-GUIDE.md` - **Visual step-by-step lab guide** (COMPLETE LAB SETUP)
 - `AWS-Transit-Gateway-Architecture.md` - Complete architecture documentation with detailed diagrams and explanations
 - `Transit-Gateway-Lab-Summary.md` - Executive summary and quick reference
+- `QUICK-REFERENCE.md` - Quick command reference card
 - `TransientGateway.jpg` - Lab output screenshot showing successful connectivity test
 
 ### Architecture Diagrams
@@ -91,18 +95,34 @@ For detailed information, see:
 
 **⚠️ CRITICAL**: Follow cleanup steps to avoid ~$58/month in charges!
 
-### Quick Cleanup Options:
+### 🎯 Quick Start (AWS Console CloudShell)
+
+📖 **[Complete Guide: How to Run Scripts in AWS Console](./RUN-SCRIPTS-IN-AWS-CONSOLE.md)** ← READ THIS!
+
+**One-Line Cleanup Command**:
+```bash
+curl -O https://raw.githubusercontent.com/SrinathMLOps/TransitGateway/main/cleanup-script.sh && chmod +x cleanup-script.sh && ./cleanup-script.sh
+```
+
+### Detailed Options:
 
 **Option 1: Automated Script (Recommended - 15-20 minutes)**
 
 📖 **[Read the Execution Guide](./HOW-TO-RUN-CLEANUP.md)** for detailed step-by-step instructions
 
-**Quick Start**:
+**Step-by-step**:
 ```bash
-# AWS CloudShell (no setup required)
+# 1. Open CloudShell in AWS Console (click >_ icon)
+# 2. Download script
 curl -O https://raw.githubusercontent.com/SrinathMLOps/TransitGateway/main/cleanup-script.sh
+
+# 3. Make executable
 chmod +x cleanup-script.sh
+
+# 4. Run script
 ./cleanup-script.sh
+
+# 5. Type 'yes' when prompted
 ```
 
 **Option 2: Manual Cleanup (20-30 minutes)**
