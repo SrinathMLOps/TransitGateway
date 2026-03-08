@@ -23,6 +23,7 @@ Successfully connected two VPCs using AWS Transit Gateway with verified connecti
 
 - `AWS-Transit-Gateway-Architecture.md` - Complete architecture documentation with detailed diagrams and explanations
 - `Transit-Gateway-Lab-Summary.md` - Executive summary and quick reference
+- `CLEANUP-GUIDE.md` - Comprehensive resource cleanup guide (20-30 minutes)
 - `TransientGateway.jpg` - Lab output screenshot showing successful connectivity test
 
 ## 🏗️ Architecture
@@ -66,7 +67,9 @@ For detailed information, see:
 
 ## 🧹 Cleanup
 
-Follow the cleanup steps in the documentation to avoid ongoing charges!
+**⚠️ CRITICAL**: Follow cleanup steps to avoid ~$58/month in charges!
+
+See the complete [Cleanup Guide](./CLEANUP-GUIDE.md) for detailed step-by-step instructions.
 
 ## 🏆 Status
 
