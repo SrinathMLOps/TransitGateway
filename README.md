@@ -38,6 +38,11 @@ Successfully connected two VPCs using AWS Transit Gateway with verified connecti
 - `cleanup-script.sh` - Bash script for Mac/Linux/CloudShell (15-20 minutes)
 - `cleanup-script.ps1` - PowerShell script for Windows (15-20 minutes)
 
+### Verification Resources
+- `HOW-TO-VERIFY-NO-BILLING.md` - **Guide to verify no billable resources** (VERIFY CLEANUP!)
+- `verify-no-billing.sh` - Bash verification script (2-3 minutes)
+- `verify-no-billing.ps1` - PowerShell verification script (2-3 minutes)
+
 ## 🏗️ Architecture
 
 ```
@@ -100,6 +105,30 @@ chmod +x cleanup-script.sh
 Follow the detailed [Cleanup Guide](./CLEANUP-GUIDE.md)
 
 See [Cleanup Scripts Documentation](./CLEANUP-SCRIPTS-README.md) for more options.
+
+---
+
+## ✅ Verify No Billing
+
+**After cleanup, verify all resources are deleted:**
+
+📖 **[Read the Verification Guide](./HOW-TO-VERIFY-NO-BILLING.md)** for complete instructions
+
+**Quick Verification**:
+```bash
+# AWS CloudShell
+curl -O https://raw.githubusercontent.com/SrinathMLOps/TransitGateway/main/verify-no-billing.sh
+chmod +x verify-no-billing.sh
+./verify-no-billing.sh
+```
+
+**Success Message**:
+```
+╔════════════════════════════════════════════════════════════════╗
+║              NO BILLABLE RESOURCES DETECTED                    ║
+║  ✅ Monthly cost: $0.00                                        ║
+╚════════════════════════════════════════════════════════════════╝
+```
 
 ## 🏆 Status
 
