@@ -43,6 +43,10 @@ Successfully connected two VPCs using AWS Transit Gateway with verified connecti
 - `verify-no-billing.sh` - Bash verification script (2-3 minutes)
 - `verify-no-billing.ps1` - PowerShell verification script (2-3 minutes)
 
+### Advanced Tools
+- `HOW-TO-USE-RESOURCE-SCANNER.md` - **Generalized resource scanner guide** (POWERFUL!)
+- `aws-resource-scanner.sh` - Scan & delete ALL AWS resources in region (5-30 minutes)
+
 ## 🏗️ Architecture
 
 ```
@@ -129,6 +133,36 @@ chmod +x verify-no-billing.sh
 ║  ✅ Monthly cost: $0.00                                        ║
 ╚════════════════════════════════════════════════════════════════╝
 ```
+
+---
+
+## 🔍 Advanced: Scan ALL Resources
+
+**Generalized tool to scan and delete ALL AWS resources in current region:**
+
+📖 **[Read the Resource Scanner Guide](./HOW-TO-USE-RESOURCE-SCANNER.md)** for complete instructions
+
+**⚠️ WARNING**: This is a powerful tool that can delete EVERYTHING in a region!
+
+**Quick Scan** (Safe - No Deletion):
+```bash
+# AWS CloudShell
+curl -O https://raw.githubusercontent.com/SrinathMLOps/TransitGateway/main/aws-resource-scanner.sh
+chmod +x aws-resource-scanner.sh
+./aws-resource-scanner.sh --scan
+```
+
+**Interactive Delete** (Asks for Confirmation):
+```bash
+./aws-resource-scanner.sh --interactive
+```
+
+**What it scans**:
+- EC2 Instances, RDS, Lambda Functions
+- VPCs, Subnets, Transit Gateways, NAT Gateways
+- Load Balancers (ALB/NLB/Classic)
+- S3 Buckets, EBS Volumes, Elastic IPs
+- And more...
 
 ## 🏆 Status
 
