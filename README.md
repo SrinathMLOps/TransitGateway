@@ -32,6 +32,7 @@ Successfully connected two VPCs using AWS Transit Gateway with verified connecti
 - `aws_transit_gateway_exact_diagram.txt` - Architecture diagram (text format)
 
 ### Cleanup Resources
+- `HOW-TO-RUN-CLEANUP.md` - **Step-by-step guide to execute cleanup script** (READ THIS FIRST!)
 - `CLEANUP-GUIDE.md` - Manual step-by-step cleanup guide (20-30 minutes)
 - `CLEANUP-SCRIPTS-README.md` - Automated cleanup scripts documentation
 - `cleanup-script.sh` - Bash script for Mac/Linux/CloudShell (15-20 minutes)
@@ -84,8 +85,13 @@ For detailed information, see:
 ### Quick Cleanup Options:
 
 **Option 1: Automated Script (Recommended - 15-20 minutes)**
+
+📖 **[Read the Execution Guide](./HOW-TO-RUN-CLEANUP.md)** for detailed step-by-step instructions
+
+**Quick Start**:
 ```bash
 # AWS CloudShell (no setup required)
+curl -O https://raw.githubusercontent.com/SrinathMLOps/TransitGateway/main/cleanup-script.sh
 chmod +x cleanup-script.sh
 ./cleanup-script.sh
 ```
@@ -93,7 +99,7 @@ chmod +x cleanup-script.sh
 **Option 2: Manual Cleanup (20-30 minutes)**
 Follow the detailed [Cleanup Guide](./CLEANUP-GUIDE.md)
 
-See [Cleanup Scripts Documentation](./CLEANUP-SCRIPTS-README.md) for detailed instructions.
+See [Cleanup Scripts Documentation](./CLEANUP-SCRIPTS-README.md) for more options.
 
 ## 🏆 Status
 
