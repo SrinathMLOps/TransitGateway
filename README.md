@@ -22,6 +22,7 @@ Successfully connected two VPCs using AWS Transit Gateway with verified connecti
 ## 📁 Repository Contents
 
 ### Documentation
+- `LAB-STEPS-VISUAL-GUIDE.md` - **Visual step-by-step lab guide** (START HERE!)
 - `AWS-Transit-Gateway-Architecture.md` - Complete architecture documentation with detailed diagrams and explanations
 - `Transit-Gateway-Lab-Summary.md` - Executive summary and quick reference
 - `TransientGateway.jpg` - Lab output screenshot showing successful connectivity test
@@ -54,8 +55,9 @@ Internet → VPC1 (Public) → Transit Gateway → VPC2 (Private)
 ## 📚 Documentation
 
 For detailed information, see:
-- [Complete Architecture Guide](./AWS-Transit-Gateway-Architecture.md)
-- [Quick Summary](./Transit-Gateway-Lab-Summary.md)
+- **[Visual Lab Guide](./LAB-STEPS-VISUAL-GUIDE.md)** - Step-by-step with diagrams (START HERE!)
+- [Complete Architecture Guide](./AWS-Transit-Gateway-Architecture.md) - Deep dive into architecture
+- [Quick Summary](./Transit-Gateway-Lab-Summary.md) - Executive overview
 
 ## 🎓 Skills Demonstrated
 
