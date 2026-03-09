@@ -13,7 +13,7 @@ Successfully connected two VPCs using AWS Transit Gateway with verified connecti
 - **VPC2 (10.1.0.0/16)**: Private VPC with no internet access
 - **Transit Gateway**: Central routing hub enabling inter-VPC communication
 
-## ✅ Results
+### ✅ Results
 
 - **Connectivity**: 100% successful (0% packet loss)
 - **Latency**: ~0.8ms average
