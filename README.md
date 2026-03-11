@@ -6,7 +6,7 @@ AWS Transit Gateway Lab - Complete Implementation and Documentation
 
 This repository contains the complete implementation and documentation of an AWS Transit Gateway lab that connects two isolated VPCs to enable private communication between EC2 instances.
 
-## 🎯 Lab Objective
+### 🎯 Lab Objective
 
 Successfully connected two VPCs using AWS Transit Gateway with verified connectivity:
 - **VPC1 (10.0.0.0/16)**: Public VPC with internet access
